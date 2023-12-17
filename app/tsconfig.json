@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "moduleResolution": "Node",
+    "pretty": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "experimentalDecorators": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "ES2020"
+  },
+  "include": ["src/**/*.ts", "server.ts"],
+  "exclude": ["node_modules", "src/**/*.spec.ts"]
+}

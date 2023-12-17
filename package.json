@@ -1,0 +1,48 @@
+{
+  "name": "vite-vue-typescript-starter",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev:ui": "vite",
+    "dev:app": "npm run --prefix ./app dev",
+    "clean": "rm -rf ./app/dist",
+    "build": "npm run clean && npm run build:ui && npm run build:app",
+    "build:ui": "npm run build:client && npm run build:server",
+    "build:client": "vite build --ssrManifest --outDir ./app/dist/client",
+    "build:server": "vite build --ssr src/entry-server.ts --outDir ./app/dist/public",
+    "build:app": "npm run --prefix ./app build",
+    "preview": "npm run --prefix ./app start"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "compression": "^1.7.4",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-prometheus-middleware": "^1.2.0",
+    "express-sitemap-xml": "^3.0.1",
+    "fast-csv": "^4.3.6",
+    "lodash": "^4.17.21",
+    "rollup": "^4.9.1",
+    "sirv": "^2.0.3",
+    "vue": "^3.3.8",
+    "vue-meta": "^3.0.0-alpha.10",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.7.5",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/express-prometheus-middleware": "^1.2.3",
+    "@types/express-sitemap-xml": "^3.0.4",
+    "@types/node": "^20.9.0",
+    "@vitejs/plugin-vue": "^3.0.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.2.2",
+    "vite": "^3.0.0",
+    "vue-tsc": "^1.8.22"
+  },
+  "type": "module"
+}
