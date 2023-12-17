@@ -6,7 +6,7 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --watch src/**/*.ts --exec ts-node ./src/server.ts",
+    "dev": "nodemon --watch src/**/*.ts --exec ts-node ./server.ts",
     "build": "tsc",
     "start": "cross-env NODE_ENV=production node ./dist/server.js"
   },
