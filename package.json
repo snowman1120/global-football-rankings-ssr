@@ -14,6 +14,8 @@
     "start": "npm run --prefix ./app start"
   },
   "dependencies": {
+    "@swc-node/register": "^1.9.0",
+    "@swc/core": "^1.4.4",
     "axios": "^1.6.2",
     "compression": "^1.7.4",
     "dotenv": "^16.3.1",
@@ -35,7 +37,7 @@
     "@types/express-prometheus-middleware": "^1.2.3",
     "@types/express-sitemap-xml": "^3.0.4",
     "@types/node": "^20.9.0",
-    "@vitejs/plugin-vue": "^3.0.0",
+    "@vitejs/plugin-vue": "^3.2.0",
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "nodemon": "^3.0.2",
